@@ -62,5 +62,6 @@ function resetBoard() {
 }
 
 
-fillButton.addEventListener('click', fillBoard)
+fillButton.addEventListener('click', fillBoard) 
 
+//hi
