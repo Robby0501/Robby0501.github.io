@@ -24,10 +24,6 @@ td {
   width: 50px;
 }
 
-@media (max-width: 700px) {
-  /* PUT CSS HERE TO ALTER WEBSITE TO SINGLE COLUMN */
-}
-
 .blue{
   background-color: blue;
 }
