@@ -4,7 +4,7 @@ let grandChildren = table.children
 function makeRow () {
     let count = 0;
     const tr = document.createElement('tr');
-    while (count < 20) {
+    while (count < 40) {
         const td = document.createElement('td');
         tr.appendChild(td);     
         count++;

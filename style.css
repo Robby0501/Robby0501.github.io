@@ -31,7 +31,6 @@ td {
 .green {
   background-color: green;
 }
-
 .magenta{
   background-color: magenta;
 }
@@ -58,4 +57,22 @@ td {
 }
 .beige {
   background-color: #eebb99;
+}
+.aquamarine{
+  background-color: aquamarine;
+}
+.lightblue{
+  background-color: rgb(75, 75, 236);
+}
+.white{
+  background-color: white;
+}
+.lightgreen{
+  background-color: rgb(59, 218, 59);
+}
+.brown{
+  background-color: rgb(103, 31, 31); 
+}
+.gold{
+  background-color: gold;
 }
