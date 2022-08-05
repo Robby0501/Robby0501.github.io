@@ -8,9 +8,14 @@
     <!-- loads our own CSS file -->
     <link rel="stylesheet" href="/style.css" />
   </head>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'></script>
   <body>
+    <!-- <div id="capture" style="padding: 10px; background: #f5da55">
+      <h4 style="color: #000; ">Hello world!</h4>
+  </div> -->
     <h1>Pixelate</h1>
     <div>
+      <button onclick="screenshot()">Take Screenshot</button>
       <button id="fill-button">Fill Board</button>
       <button id='reset-board'>Reset Board</button>
       <button id='add-row'>Add a row</button>
@@ -25,12 +30,21 @@
         <option class = 'opt' value="red">Red</option>
         <option class = 'opt' value="pink">Pink</option>
         <option class = 'opt' value="grey">Grey</option>
-
+        <option class = 'opt' value="black">Black</option>
+        <option class = 'opt' value="beige">Beige</option>
+        
       </select>
     </div>
-    <table>  
+    <table id="capture">  
     </table>
   </body>
+  <script>
+    function screenshot(){
+  html2canvas(document.querySelector("#capture")).then(canvas => {
+    document.body.appendChild(canvas)})
+  }
+    </script> 
+
   <!-- loads our JavaScript file -->
   <script type="text/javascript" src="/script.js"></script>
 </html>

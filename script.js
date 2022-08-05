@@ -20,9 +20,9 @@ let colorSelected = 'blue'
 
 function colorize(event) {
     const target = event.target
-    if (event.target.tagName === 'TD' && event.shiftKey) {
-        if (target.className.length) {
-            target.className = target.className
+    if (event.target.tagName === 'TD') {
+        if (target.className === colorSelected) {
+            target.className = 'grey'
         } else {
            target.className = colorSelected
         }
@@ -34,8 +34,16 @@ function change(event) {
 }
 addRow.addEventListener('click',  makeRow)
 colorChoice.addEventListener('change', change)
-table.addEventListener('mouseover', colorize) 
- 
+
+table.addEventListener('mousedown', function() {
+    // colorize(event)
+    table.addEventListener('mouseover', colorize)
+}) 
+
+table.addEventListener('mouseup', function () {
+   table.removeEventListener('mouseover', colorize)
+})
+
 const colorArr = Array.from(grandChildren)
 // const trChild (colorArr.forEach(tr => tr.children))
 function resetBoard() {
