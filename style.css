@@ -14,6 +14,9 @@ body {
   align-items: center;
 }
 
+select, button {
+ height: 25px;
+}
 /* your CSS below! */
 td {
   background-color: lightgrey;
@@ -31,4 +34,22 @@ td {
 
 .magenta{
   background-color: magenta;
+}
+.purple{
+  background-color: purple;
+}
+.yellow{
+  background-color: yellow;
+}
+.orange{
+  background-color: orange;
+}
+.red{
+  background-color: red;
+}
+.pink{
+  background-color: pink;
+}
+.grey{
+  background-color: lightgrey;
 }
