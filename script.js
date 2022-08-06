@@ -35,14 +35,13 @@ function change(event) {
 addRow.addEventListener('click',  makeRow)
 colorChoice.addEventListener('change', change)
 
-table.addEventListener('mousedown', function() {
+table.addEventListener('click', colorize)
     // colorize(event)
-    table.addEventListener('mouseover', colorize)
-}) 
+    // table.addEventListener('mouseover', colorize)
 
-table.addEventListener('mouseup', function () {
-   table.removeEventListener('mouseover', colorize)
-})
+// table.addEventListener('mouseup', function () {
+//    table.removeEventListener('mouseover', colorize)
+// })
 
 const colorArr = Array.from(grandChildren)
 // const trChild (colorArr.forEach(tr => tr.children))
